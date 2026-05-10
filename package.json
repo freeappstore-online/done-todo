@@ -1,0 +1,14 @@
+{
+  "name": "done-todo",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @done-todo/web dev",
+    "build": "pnpm --filter @done-todo/web build",
+    "preview": "pnpm --filter @done-todo/web preview",
+    "typecheck": "pnpm --filter @done-todo/web exec tsc -b",
+    "test": "pnpm --filter @done-todo/web test"
+  }
+}
